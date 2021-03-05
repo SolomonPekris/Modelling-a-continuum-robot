@@ -3,7 +3,7 @@ function solution = dynamicShooting(T_t,N,doPlot, del_t, t,Initial)
 %%of rods and strings using shooting method
 
 t_steps = length(t);
-
+options = optimset('Display','off'); %Turns off fsolves display
 %Set Constants
 L = 0.24; %Backbone Length (m)
 Area = 5.02655e-7; %Backbone Cross Sectional Area (m^2)
