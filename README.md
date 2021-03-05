@@ -1,6 +1,8 @@
 # Modelling-a-continuum-robot
 A dynamic model that calculates the position of a tendon driven continuum robot for use in minimal invasive surgery. Uses a semi-discretisation scheme to implicitly discretise in time and then solves the resulting ODEs.
 
+dynamicBVP uses MATLABs inbuilt BVP4C solver to solve the system of ODEs, and dynamicShooting uses the more typical shooting method approach.
+
 Example input into dynamicShooting would be:
 
 dt = 0.05; %Sets timestep size
